@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+
+  useEffect(() => {
+    if (theme === 'light') {
+      document.documentElement.classList.add('light-theme');
+    } else {
+      document.documentElement.classList.remove('light-theme');
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'dark' ? 'light' : 'dark');
+  };
+
   return (
     <nav className="navbar">
       <div className="container nav-container">
@@ -14,7 +28,13 @@ const Navbar: React.FC = () => {
           <li><a href="#certifications">CERTIFICATIONS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
-        <a href="#" className="btn btn-outline nav-download">DOWNLOAD CV</a>
+        <div className="theme-switch-wrapper" onClick={toggleTheme}>
+          <div className={`theme-switch-track ${theme}`}>
+            <div className="theme-switch-thumb">
+              {theme === 'dark' ? '🌙' : '☀️'}
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   );

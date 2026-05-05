@@ -8,9 +8,14 @@ const Education: React.FC = () => {
         <h2 className="section-title">Education Journey</h2>
         <div className="education-grid">
           <div className="card education-card">
-            <span className="education-year text-purple">2020 — Present</span>
-            <h3 className="education-degree">Bachelor of Information Systems</h3>
-            <p className="education-school">Cosmic University of Technology</p>
+            <div className="education-header">
+              <div className="education-info">
+                <span className="education-year text-purple">2023 — Present</span>
+                <h3 className="education-degree">SISTEM INFORMASI JARINGAN</h3>
+                <p className="education-school">SMK NEGERI 2 YOGYAKARTA</p>
+              </div>
+              <img src="/smk.png" alt="SMK Negeri 2 Yogyakarta" className="education-logo" />
+            </div>
             <p className="education-desc text-muted">
               Focusing on enterprise architecture, network engineering, and complex database systems.
               Leading research on scalable distributed networks.

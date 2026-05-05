@@ -10,6 +10,18 @@
   --gradient-purple: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(126, 34, 206, 0.05));
 }
 
+:root.light-theme {
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --accent-purple: #9333ea;
+  --accent-purple-dark: #7e22ce;
+  --border-color: #e2e8f0;
+  --gradient-purple: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(126, 34, 206, 0.02));
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
