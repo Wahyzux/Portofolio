@@ -1,0 +1,32 @@
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.education-card {
+  position: relative;
+}
+
+.education-year {
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.education-degree {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.education-school {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.education-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

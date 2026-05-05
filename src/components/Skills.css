@@ -1,0 +1,38 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-title {
+  align-items: center;
+}
+
+.centered-title::after {
+  margin-top: 0.5rem;
+}
+
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+}
+
+.skill-pill {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-pill:hover {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+  transform: translateY(-2px);
+}
