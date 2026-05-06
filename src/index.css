@@ -41,6 +41,16 @@ body {
   position: relative;
 }
 
+/* Star Animation */
+@keyframes drift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200px 200px;
+  }
+}
+
 /* Starry background effect - more prominent */
 body::before {
   content: "";
@@ -62,6 +72,7 @@ body::before {
   opacity: 0.4;
   z-index: -2;
   pointer-events: none;
+  animation: drift 60s linear infinite;
 }
 
 /* Glowing Orbs */
